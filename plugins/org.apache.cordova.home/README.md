@@ -1,11 +1,11 @@
-#cordova-plugin-android-home
+# cordova-plugin-android-home
 Send App in background to Minimize the application and it's still running for android.
 
 Base on [http://stackoverflow.com/questions/17826122/send-application-to-background-mode-when-back-button-is-pressed-in-phonegap](http://stackoverflow.com/questions/17826122/send-application-to-background-mode-when-back-button-is-pressed-in-phonegap).
-#Installation
+# Installation
     cordova plugin add https://github.com/ZhichengChen/cordova-plugin-android-home
     
-#Usage
+# Usage
  
     navigator.home.home(succesCallback, errorCallback)
     
@@ -14,7 +14,7 @@ Base on [http://stackoverflow.com/questions/17826122/send-application-to-backgro
 
 
 
-#Example
+# Example
 
     navigator.home.home(function(){
         console.info("Successfully launched home intent");
@@ -22,5 +22,5 @@ Base on [http://stackoverflow.com/questions/17826122/send-application-to-backgro
         console.error("Error launching home intent");
     });
  
-#Support Platforms
+# Support Platforms
 * Android
