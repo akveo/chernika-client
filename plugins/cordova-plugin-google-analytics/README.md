@@ -7,7 +7,7 @@ Prerequisites:
 * A Cordova 3.0+ project for iOS and/or Android
 * A Mobile App property through the Google Analytics Admin Console
 
-#Installing
+# Installing
 
 This plugin follows the Cordova 3.0+ plugin spec, so it can be installed through the Cordova CLI in your existing Cordova project:
 ```bash
@@ -23,7 +23,7 @@ The plugin.xml file will add the Google Analytics SDK files for Android and/or i
 
 If you are not using the CLI, follow the steps in the section [Installing Without the CLI](#nocli)
 
-#JavaScript Usage
+# JavaScript Usage
 In your 'deviceready' handler, set up your Analytics tracker:
 * `window.analytics.startTrackerWithId('UA-XXXX-YY')` where UA-XXXX-YY is your Google Analytics Mobile App property
 
@@ -54,7 +54,7 @@ To set a UserId:
 To enable verbose logging:
 * `window.analytics.debugMode()`
 
-#Installing Without the CLI <a name="nocli"></a>
+# Installing Without the CLI <a name="nocli"></a>
 Copy the files manually into your project and add the following to your config.xml files:
 ```xml
 <feature name="UniversalAnalytics">
@@ -72,7 +72,7 @@ You also will need to manually add the Google Analytics SDK files:
 * For iOS, add the downloaded Google Analytics SDK header files and libraries according to the [Getting Started](https://developers.google.com/analytics/devguides/collection/ios/v3) documentation
 * For Android, add `libGoogleAnalyticsServices.jar` to your Cordova Android project's `/libs` directory and build path
 
-#Integrating with Lavaca
+# Integrating with Lavaca
 The `lavaca` directory includes a component that can be added to a <a href="http://getlavaca.com">Lavaca</a> project.  It offers a way to use the web `analytics.js` when the app is running in the browser and not packaged as Cordova.
 
 * Copy `AnalyticsService.js` to your Lavaca project (I create a directory under `js/app` called `data`).
